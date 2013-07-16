@@ -5,7 +5,7 @@ module BonaFide
     end
 
     def matches?(request)
-      @config.base_class.send(@getter)
+      BonaFide.config.base_class.send(@getter)
     end
   end
 end

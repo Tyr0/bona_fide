@@ -17,7 +17,7 @@ module BonaFide
     private
 
     def cookies
-      @cookies ||= @env["action_dispatch.cookies"] || Rack::Request.new(@env).cookies
+      @env["action_dispatch.cookies"] || Rack::Request.new(@env).cookies
     end
 
     def get_cookie
