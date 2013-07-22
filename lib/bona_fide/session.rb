@@ -6,6 +6,8 @@ module BonaFide
 
     def call(env)
       @env = env
+      # reset cookies on each request
+      @cookies = nil
 
       if cookie = get_cookie
         BonaFide.config.set_base(cookie)
@@ -17,7 +19,7 @@ module BonaFide
     private
 
     def cookies
-      @env["action_dispatch.cookies"] || Rack::Request.new(@env).cookies
+      @cookies ||= @env["action_dispatch.cookies"] || Rack::Request.new(@env).cookies
     end
 
     def get_cookie
