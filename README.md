@@ -25,6 +25,7 @@ BonaFide.configure do |config|
   config.base_class = User
   config.setter = :authenticate
   config.cookie_name = "user_cookie"
+end
 ```
 
 ## Usage
