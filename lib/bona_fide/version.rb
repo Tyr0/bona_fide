@@ -1,10 +1,10 @@
 module BonaFide
+  def self.version
+    Gem::Version.new("0.0.1.beta")
+  end
+  
   module VERSION
-    MAJOR = 0
-    MINOR = 0
-    TINY  = 1
-    PRE   = "beta"
-
-    STRING = [MAJOR, MINOR, TINY, PRE].compact.join(".")
+    MAJOR, MINOR, TINY, PRE = BonaFide.version.segments
+    STRING = BonaFide.version.to_s
   end
 end

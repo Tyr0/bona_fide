@@ -4,7 +4,7 @@ require 'bona_fide/version'
 
 Gem::Specification.new do |s|
   s.name = "bona_fide"
-  s.version = BonaFide::VERSION::STRING
+  s.version = BonaFide.version
   s.authors = ["Tyler Calderone"]
   s.email = "bona_fide@tylercalderone.com"
   s.homepage = "http://github.com/tyr0/bona_fide"
@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
     lib/bona_fide/engine.rb
     lib/bona_fide/configuration.rb
     lib/bona_fide/session.rb
-    lib/bona_fide/constraints.rb
+    lib/bona_fide/constraint.rb
   )
   s.add_dependency("rack", ">= 1.0")
 end

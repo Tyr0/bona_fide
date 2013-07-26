@@ -10,7 +10,7 @@ module BonaFide
       @cookies = nil
 
       if cookie = get_cookie
-        BonaFide.config.set_base(cookie)
+        BonaFide.config.call_base(cookie)
       end
       
       @app.call(env)

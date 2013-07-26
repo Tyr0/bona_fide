@@ -1,5 +1,5 @@
 module BonaFide
-  class Constraints
+  class Constraint
     def initialize(getter)
       @getter = getter
     end

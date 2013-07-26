@@ -30,18 +30,18 @@ end
 
 ## Usage
 
-BonaFide provides a helper for routing via `BonaFide::Constraints` which allows for calling methods on the configured base class. For example:
+BonaFide provides a helper for routing via `BonaFide::Constraint` which allows for calling methods on the configured base class. For example:
 
 ```ruby
 ExampleApp::Applicatoin.routes.draw do
 
   # routes where User.admin? is true
-  constraints(BonaFide::Constraints.new(:admin?)) do
+  constraints(BonaFide::Constraint.new(:admin?)) do
     root to: "index#admin"
   end
 
   # routes where User.user? is true
-  constraints(BonaFide::Constraints.new(:user?)) do
+  constraints(BonaFide::Constraint.new(:user?)) do
     root to: "index#user"
   end
 
