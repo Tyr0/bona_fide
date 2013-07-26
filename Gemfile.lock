@@ -1,0 +1,18 @@
+PATH
+  remote: .
+  specs:
+    bona_fide (0.0.1.beta)
+      rack (>= 1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rack (1.5.2)
+    rake (10.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bona_fide!
+  rake (~> 10.1)

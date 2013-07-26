@@ -1,5 +1,7 @@
 # BonaFide
 
+[![Build Status](https://travis-ci.org/Tyr0/bona_fide.png?branch=master)](https://travis-ci.org/Tyr0/bona_fide)
+
 Low level Rack authentication enforcement.
 
 ## Features
