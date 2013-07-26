@@ -2,5 +2,6 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem 'rake', '~> 10.1'
+gem 'rails', '>= 3.0'
+gem 'rake', '~> 10'
 gem 'rspec', '~> 2.14'
