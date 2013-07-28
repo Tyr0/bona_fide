@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.email = "bona_fide@tylercalderone.com"
   s.homepage = "http://github.com/tyr0/bona_fide"
   s.summary = "Low level Rack authentication enforcement"
+  s.license = "MIT"
   # file requirements
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- spec/*`.split("\n")
