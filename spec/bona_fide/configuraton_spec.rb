@@ -26,16 +26,16 @@ describe "BonaFide::Configuration" do
     config.setter.should eq(nil)
   end
 
-  describe "#call_base", :include_user do
-    it "should respond to :call_base" do
-      config.should respond_to(:call_base)
+  describe "#call_base" do
+    it "should respond to :call_setter" do
+      config.should respond_to(:call_setter)
     end
     
     it "should call :setter on :base_class" do
-      config.base_class = TestUser
+      config.base_class = BonaFideHelper::User
       config.setter = :authenticate
 
-      config.send(:call_base, TestUser::TEST_TOKEN).should eq(true)
+      config.send(:call_setter, BonaFideHelper::User::TEST_TOKEN).should eq(true)
     end
   end
 end

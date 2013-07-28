@@ -5,7 +5,7 @@ module BonaFide
       :cookie_name,
       :setter
 
-    def call_base(cookie)
+    def call_setter(cookie) #:nodoc:
       @base_class.send(@setter, cookie)
     end
   end

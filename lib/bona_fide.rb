@@ -9,7 +9,15 @@ module BonaFide
   class << self
     attr_accessor :config
   end
-  
+
+  # Configure BonaFide settings via a block
+  # 
+  #   BonaFide.configure do |config|
+  #     config.base_class = User
+  #     config.setter = :authenticate
+  #     config.cookie_name = "user_cookie"
+  #   end
+  #
   def self.configure
     @config ||= BonaFide::Configuration.new
     yield config

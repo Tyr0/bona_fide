@@ -4,13 +4,14 @@ module BonaFide
       @app = app
     end
 
+    # Called on every web request,
     def call(env)
       @env = env
       # reset cookies on each request
       @cookies = nil
 
       if cookie = get_cookie
-        BonaFide.config.call_base(cookie)
+        BonaFide.config.call_setter(cookie)
       end
       
       @app.call(env)
