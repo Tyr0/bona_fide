@@ -1,6 +1,6 @@
 module BonaFide
   def self.version
-    Gem::Version.new("0.0.1")
+    Gem::Version.new("0.1.0")
   end
   
   module VERSION
