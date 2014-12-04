@@ -11,7 +11,7 @@ module BonaFide
   end
 
   # Configure BonaFide settings via a block
-  # 
+  #
   #   BonaFide.configure do |config|
   #     config.base_class = User
   #     config.setter = :authenticate

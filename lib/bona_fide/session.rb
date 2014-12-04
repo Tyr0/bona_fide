@@ -13,10 +13,10 @@ module BonaFide
       if cookie = get_cookie
         BonaFide.config.call_setter(cookie)
       end
-      
+
       @app.call(env)
     end
-    
+
     private
 
     def cookies
